@@ -19,12 +19,10 @@ Build a mock RPM.
 make
 
 %install
-make install
-
-install -D -m 755 %{SOURCE}/my %{buildroot}/bin/my
+make PREFIX=/usr/local DESTDIR=%{?buildroot} install
 
 %files
 %defattr(-,root,root,-)
-/bin/my
+%{_bindir}/my
 
 %changelog
