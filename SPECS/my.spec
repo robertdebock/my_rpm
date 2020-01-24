@@ -17,6 +17,7 @@ Build a mock RPM.
 %build
 %configure
 %install
+make
 
 install -D -m 755 %{SOURCE}/my %{buildroot}/bin/my
 
