@@ -12,8 +12,6 @@ BuildRequires: gcc make
 %description
 Build a mock RPM.
 
-%global debug_package %{nil}
-
 %prep
 %setup -q
 
