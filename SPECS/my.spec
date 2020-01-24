@@ -18,7 +18,7 @@ Build a mock RPM.
 %configure
 %install
 
-install -D -m 755 %{SOURCE}/my %{buildroot}/bin/my
+install -D -m 755 %{SOURCE}/my.a %{buildroot}/bin/my
 
 %files
 %defattr(-,root,root,-)
